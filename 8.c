@@ -1,4 +1,13 @@
-//Write a program to open a file in read only mode, read line by line and display each line as it is read. Close the file when end of file is reached.
+/*
+============================================================================
+Name : 8.c
+Author : Aashish Vaswani
+Description : Write a program to open a file in read only mode, read line by line and display each line as it is read.
+Close the file when end of file is reached.
+Date: 28th Aug, 2024.
+============================================================================
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 

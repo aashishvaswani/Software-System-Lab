@@ -1,4 +1,12 @@
-//5. Write a program to create five new files with infinite loop. Execute the program in the background and check the file descriptor table at /proc/pid/fd.
+/*
+============================================================================
+Name : 5.c
+Author : Aashish Vaswani
+Description : Write a program to create five new files with infinite loop. Execute the program in the background
+and check the file descriptor table at /proc/pid/fd.
+Date: 28th Aug, 2024.
+============================================================================
+*/
 
 #include <sys/types.h>
 #include <sys/stat.h>

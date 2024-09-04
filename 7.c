@@ -1,4 +1,12 @@
-//Write a program to copy file1 into file2 ($cp file1 file2).
+/*
+============================================================================
+Name : 7.c
+Author : Aashish Vaswani
+Description :Write a program to copy file1 into file2 ($cp file1 file2)
+Date: 28th Aug, 2024.
+============================================================================
+*/
+
 #include <stdio.h>
 #include <fcntl.h>
 #include <unistd.h>

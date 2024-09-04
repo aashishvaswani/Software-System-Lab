@@ -1,5 +1,10 @@
 /*
-  Find out the priority of your running program. Modify the priority with nice command.
+============================================================================
+Name : 20.c
+Author : Aashish Vaswani
+Description : Find out the priority of your running program. Modify the priority with nice command.
+Date: 31st Aug, 2024.
+============================================================================
 */
 
 #include <stdio.h>

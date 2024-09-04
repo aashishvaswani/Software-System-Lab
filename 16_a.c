@@ -1,7 +1,12 @@
 /*
-  Write a program to perform mandatory locking.
-  a. Implement write lock
-  b. Implement read lock
+============================================================================
+Name : 16_a.c
+Author : Aashish Vaswani
+Description : Write a program to perform mandatory locking.
+a. Implement write lock
+b. Implement read lock
+Date: 31st Aug, 2024.
+============================================================================
 */
 
 #include <fcntl.h>

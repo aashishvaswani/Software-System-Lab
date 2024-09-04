@@ -1,5 +1,10 @@
 /*
-  Write a program to create a Zombie state of the running program.
+============================================================================
+Name : 23.c
+Author : Aashish Vaswani
+Description : Write a program to create a Zombie state of the running program
+Date: 31st Aug, 2024.
+============================================================================
 */
 
 #include <stdio.h>

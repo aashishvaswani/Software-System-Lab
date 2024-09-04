@@ -1,4 +1,12 @@
-//4. Write a program to open an existing file with read write mode. Try O_EXCL flag also.
+/*
+============================================================================
+Name : 4.c
+Author : Aashish Vaswani
+Description : Write a program to open an existing file with read write mode. Try O_EXCL flag also.
+Date: 28th Aug, 2024.
+============================================================================
+*/
+
 #include <fcntl.h>
 #include <stdio.h>
 #include <unistd.h>

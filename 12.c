@@ -1,6 +1,12 @@
 /*
-  Write a program to find out the opening mode of a file. Use fcntl.
+============================================================================
+Name : 12.c
+Author : Aashish Vaswani
+Description : Write a program to find out the opening mode of a file. Use fcntl.
+Date: 30th Aug, 2024.
+============================================================================
 */
+
 #include <stdio.h>
 #include <unistd.h>
 #include <fcntl.h>
@@ -35,7 +41,7 @@ int main() {
       printf("The file is accessed in Read-Write mode!\n");
       break;
       
-    defalut : 
+    default : 
       printf("The file is being accessed in an unknown mode!\n");
   }
   

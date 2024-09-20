@@ -3,7 +3,6 @@
 Name : 27b.c
 Author : Aashish Vaswani
 Description : Write a program to receive messages from the message queue.
-a. with 0 as a flag
 b. with IPC_NOWAIT as a flag
 Date: 20th Sep, 2024.
 ============================================================================

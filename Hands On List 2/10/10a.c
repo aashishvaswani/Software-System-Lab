@@ -4,8 +4,6 @@ Name : 10a.c
 Author : Aashish Vaswani
 Description : Write a separate program using sigaction system call to catch the following signals.
 a. SIGSEGV
-b. SIGINT
-c. SIGFPE
 Date: 19th Sep, 2024.
 ============================================================================
 */

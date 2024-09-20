@@ -4,8 +4,6 @@ Name : 1c.c
 Author : Aashish Vaswani
 Description : Write a separate program (for each time domain) to set a interval timer in 10sec and
 10micro second
-a. ITIMER_REAL
-b. ITIMER_VIRTUAL
 c. ITIMER_PROF
 Date: 19th Sep, 2024.
 ============================================================================

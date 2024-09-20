@@ -4,8 +4,6 @@ Name : 17a.c
 Author : Aashish Vaswani
 Description : Write a program to execute ls -l | wc.
 a. use dup
-b. use dup2
-c. use fcntl
 Date: 19th Sep, 2024.
 ============================================================================
 */

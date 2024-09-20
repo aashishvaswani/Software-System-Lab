@@ -3,7 +3,6 @@
 Name : 31b.c
 Author : Aashish Vaswani
 Description : Write a program to create a semaphore and initialize value to the semaphore.
-a. create a binary semaphore
 b. create a counting semaphore
 Date: 20th Sep, 2024.
 ============================================================================

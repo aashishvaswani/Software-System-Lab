@@ -1,3 +1,12 @@
+/*
+============================================================================
+Name : 21a.c
+Author : Aashish Vaswani
+Description : Write two programs so that both can communicate by FIFO -Use two way communications.
+Date: 20th Sep, 2024.
+============================================================================
+*/
+
 #include <fcntl.h>
 #include <sys/stat.h>
 #include <unistd.h>
@@ -40,3 +49,17 @@ int main() {
     return 0;
 }
 
+
+/*
+
+Output:
+Terminal 1:
+aashish-vaswani@aashish-vaswani-HP-Laptop-15g-dr0xxx:~/hl2/21$ ./21a
+Received: Message from B to A
+
+Terminal 2:
+aashish-vaswani@aashish-vaswani-HP-Laptop-15g-dr0xxx:~/hl2/21$ ./21b
+Received: Message from A to B
+
+
+*/

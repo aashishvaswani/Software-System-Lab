@@ -1,3 +1,12 @@
+/*
+============================================================================
+Name : 15.c
+Author : Aashish Vaswani
+Description : Write a simple program to send some data from parent to the child process.
+Date: 19th Sep, 2024.
+============================================================================
+*/
+
 #include <unistd.h>
 #include <sys/types.h>
 #include <stdio.h>
@@ -35,3 +44,11 @@ int main() {
     return 0;
 }
 
+
+/*
+
+Output:
+aashish-vaswani@aashish-vaswani-HP-Laptop-15g-dr0xxx:~/hl2$ ./15
+Data from parent: Hello World!
+
+*/

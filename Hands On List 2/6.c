@@ -1,3 +1,12 @@
+/*
+============================================================================
+Name : 6.c
+Author : Aashish Vaswani
+Description : Write a simple program to create three threads.
+Date: 19th Sep, 2024.
+============================================================================
+*/
+
 #include <stdio.h>
 #include <pthread.h>
 #include <unistd.h>
@@ -22,3 +31,10 @@ int main() {
     pthread_exit(NULL);
 }
 
+/*
+Output:
+aashish-vaswani@aashish-vaswani-HP-Laptop-15g-dr0xxx:~/hl2$ ./6
+Running in thread: 140161511847616
+Running in thread: 140161503454912
+Running in thread: 140161495062208
+*/

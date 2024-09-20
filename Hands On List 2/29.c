@@ -1,8 +1,8 @@
 /*
 ============================================================================
-Name : 26.c
+Name : 29.c
 Author : Aashish Vaswani
-Description : Write a program to send messages to the message queue. Check $ipcs -q
+Description : Write a program to remove the message queue.
 Date: 20th Sep, 2024.
 ============================================================================
 */
@@ -13,15 +13,9 @@ Date: 20th Sep, 2024.
 #include <stdio.h>
 #include <unistd.h>
 
-struct message {
-    long mtype;
-    int value;
-};
-
 int main() {
     key_t key;
     int msgId;
-    struct message msg;
 
     key = ftok(".", 1);
     if (key == -1) {
@@ -31,32 +25,36 @@ int main() {
 
     msgId = msgget(key, IPC_CREAT | 0700);
     if (msgId == -1) {
-        perror("Error creating message queue");
+        perror("Error getting message queue");
         _exit(1);
     }
 
-    msg.mtype = 1;
-    msg.value = 100;
+    printf("Key: %d\n", key);
+    printf("Message Queue Identifier: %d\n\n", msgId);
 
-    if (msgsnd(msgId, &msg, sizeof(msg.value), 0) == -1) {
-        perror("Error sending message");
+    if (msgctl(msgId, IPC_RMID, NULL) == -1) {
+        perror("Error removing message queue");
         _exit(1);
     }
 
-    printf("Message sent successfully! You can check using ipcs -q\n");
+    printf("Message queue removed successfully.\n");
+
     return 0;
 }
-
 
 /*
 Output:
 
-aashish-vaswani@aashish-vaswani-HP-Laptop-15g-dr0xxx:~/hl2$ ./26
-Message sent successfully! You can check using ipcs -q
+aashish-vaswani@aashish-vaswani-HP-Laptop-15g-dr0xxx:~/hl2$ ./29
+Key: 17039544
+Message Queue Identifier: 0
+
+Message queue removed successfully.
+
 aashish-vaswani@aashish-vaswani-HP-Laptop-15g-dr0xxx:~/hl2$ ipcs -q
 
 ------ Message Queues --------
 key        msqid      owner      perms      used-bytes   messages    
-0x010400b8 0          aashish-va 700        8            2           
+0x0104041a 1          aashish-va 700        0            0           
 
 */

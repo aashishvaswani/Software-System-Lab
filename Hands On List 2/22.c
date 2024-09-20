@@ -1,3 +1,13 @@
+/*
+============================================================================
+Name : 22.c
+Author : Aashish Vaswani
+Description : Write a program to wait for data to be written into FIFO within 10 seconds, use select
+system call with FIFO.
+Date: 20th Sep, 2024.
+============================================================================
+*/
+
 #include <fcntl.h>
 #include <sys/select.h>
 #include <sys/stat.h>
@@ -65,10 +75,10 @@ Terminal 1:
 aashish-vaswani@aashish-vaswani-HP-Laptop-15g-dr0xxx:~/hl2$ gcc -o 22 22.c
 aashish-vaswani@aashish-vaswani-HP-Laptop-15g-dr0xxx:~/hl2$ ./22
 Waiting for data to be written into the FIFO (10-second timeout)...
-Data received: ashbc
+Data received: aashish this side
 
 Terminal 2:
-aashish-vaswani@aashish-vaswani-HP-Laptop-15g-dr0xxx:~/hl2$ echo "ashbc" > myfifo
+aashish-vaswani@aashish-vaswani-HP-Laptop-15g-dr0xxx:~/hl2$ echo "aashish this side" > myfifo
 
 */
 

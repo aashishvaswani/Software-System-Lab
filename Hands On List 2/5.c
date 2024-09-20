@@ -1,3 +1,20 @@
+/*
+============================================================================
+Name : 5.c
+Author : Aashish Vaswani
+Description : Write a program to print the system limitation of
+a. maximum length of the arguments to the exec family of functions.
+b. maximum number of simultaneous process per user id.
+c. number of clock ticks (jiffy) per second.
+d. maximum number of open files
+e. size of a page
+f. total number of pages in the physical memory
+g. number of currently available pages in the physical memory.
+Date: 19th Sep, 2024.
+============================================================================
+*/
+
+
 #include <unistd.h>
 #include <stdio.h>
 
@@ -12,4 +29,16 @@ int main() {
     
     return 0;
 }
+
+/*
+Output:
+aashish-vaswani@aashish-vaswani-HP-Laptop-15g-dr0xxx:~/hl2$ ./5
+Maximum length of the arguments to the exec family of functions: 2097152
+Maximum number of simultaneous processes per user id: 63287
+Number of clock ticks (jiffy) per second: 100
+Maximum number of open files: 1024
+Size of a page: 4096 bytes
+Total number of pages in the physical memory: 4069138
+Number of currently available pages in the physical memory: 3102711
+*/
 

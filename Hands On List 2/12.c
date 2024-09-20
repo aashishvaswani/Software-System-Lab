@@ -1,3 +1,13 @@
+/*
+============================================================================
+Name : 12.c
+Author : Aashish Vaswani
+Description : Write a program to create an orphan process. Use kill system call to send SIGKILL signal to
+the parent process from the child process.
+Date: 19th Sep, 2024.
+============================================================================
+*/
+
 #include <sys/types.h>
 #include <signal.h>
 #include <unistd.h>
@@ -28,3 +38,15 @@ int main() {
     return 0;
 }
 
+
+/*
+Output:
+
+aashish-vaswani@aashish-vaswani-HP-Laptop-15g-dr0xxx:~/hl2$ ./12
+Child PID: 13559
+Parent PID: 13558
+Successfully killed parent!
+Killed
+aashish-vaswani@aashish-vaswani-HP-Laptop-15g-dr0xxx:~/hl2$ Child now exiting!
+
+*/

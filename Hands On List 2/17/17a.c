@@ -1,3 +1,16 @@
+/*
+============================================================================
+Name : 17a.c
+Author : Aashish Vaswani
+Description : Write a program to execute ls -l | wc.
+a. use dup
+b. use dup2
+c. use fcntl
+Date: 19th Sep, 2024.
+============================================================================
+*/
+
+
 #include <unistd.h>
 #include <stdio.h>
 
@@ -24,3 +37,11 @@ int main() {
     return 0;
 }
 
+
+/*
+
+Output:
+aashish-vaswani@aashish-vaswani-HP-Laptop-15g-dr0xxx:~/hl2/17$ ./17a
+      7      56     423
+
+*/

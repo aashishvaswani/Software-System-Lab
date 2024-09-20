@@ -1,3 +1,15 @@
+/*
+============================================================================
+Name : 10a.c
+Author : Aashish Vaswani
+Description : Write a separate program using sigaction system call to catch the following signals.
+a. SIGSEGV
+b. SIGINT
+c. SIGFPE
+Date: 19th Sep, 2024.
+============================================================================
+*/
+
 #include <signal.h>
 #include <stdio.h>
 #include <unistd.h>
@@ -22,3 +34,11 @@ int main() {
     return 0;
 }
 
+
+/*
+
+Output:
+aashish-vaswani@aashish-vaswani-HP-Laptop-15g-dr0xxx:~/hl2/10$ ./10a
+Caught signal SIGSEGV (11)
+
+*/

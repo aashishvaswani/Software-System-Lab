@@ -1,3 +1,20 @@
+/*
+============================================================================
+Name : 25.c
+Author : Aashish Vaswani
+Description : Write a program to print a message queue's (use msqid_ds and ipc_perm structures)
+a. access permission
+b. uid, gid
+c. time of last message sent and received
+d. time of last change in the message queue
+d. size of the queue
+f. number of messages in the queue
+g. maximum number of bytes allowed
+h. pid of the msgsnd and msgrcv
+Date: 20th Sep, 2024.
+============================================================================
+*/
+
 #include <sys/types.h>
 #include <sys/ipc.h>
 #include <sys/msg.h>
@@ -42,3 +59,21 @@ int main() {
     return 0;
 }
 
+
+/*
+Output:
+
+aashish-vaswani@aashish-vaswani-HP-Laptop-15g-dr0xxx:~/hl2$ ./25
+Access Permission: 700
+UID: 1000
+GID: 1000
+Time of last message sent: 0
+Time of last message received: 0
+Time of last change: 1726832263
+Size of queue: 0 bytes
+Number of messages in queue: 0
+Max number of bytes: 16384
+PID of last msgsnd: 0
+PID of last msgrcv: 0
+
+*/

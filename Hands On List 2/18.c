@@ -1,3 +1,14 @@
+/*
+============================================================================
+Name : 18.c
+Author : Aashish Vaswani
+Description : Write a program to find out total number of directories on the pwd.
+execute ls -l | grep ^d | wc ? Use only dup2.
+Date: 20th Sep, 2024.
+============================================================================
+*/
+
+
 #include <unistd.h>
 #include <sys/types.h>
 #include <stdio.h>
@@ -41,3 +52,11 @@ int main() {
     return 1;
 }
 
+
+/*
+
+Output:
+aashish-vaswani@aashish-vaswani-HP-Laptop-15g-dr0xxx:~/hl2$ ./18
+     12     108     802
+
+*/

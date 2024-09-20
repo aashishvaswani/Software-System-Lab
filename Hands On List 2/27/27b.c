@@ -1,3 +1,14 @@
+/*
+============================================================================
+Name : 27b.c
+Author : Aashish Vaswani
+Description : Write a program to receive messages from the message queue.
+a. with 0 as a flag
+b. with IPC_NOWAIT as a flag
+Date: 20th Sep, 2024.
+============================================================================
+*/
+
 #include <sys/types.h>
 #include <sys/ipc.h>
 #include <sys/msg.h>
@@ -43,6 +54,11 @@ int main() {
 
 /*
 Output:
+
+aashish-vaswani@aashish-vaswani-HP-Laptop-15g-dr0xxx:~/hl2/27$ ./27a
+Message sent!
+
 aashish-vaswani@aashish-vaswani-HP-Laptop-15g-dr0xxx:~/hl2/27$ ./27b
 Received number: 100
+
 */

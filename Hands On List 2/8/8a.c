@@ -1,3 +1,20 @@
+/*
+============================================================================
+Name : 8a.c
+Author : Aashish Vaswani
+Description : Write a separate program using signal system call to catch the following signals.
+a. SIGSEGV
+b. SIGINT
+c. SIGFPE
+d. SIGALRM (use alarm system call)
+e. SIGALRM (use setitimer system call)
+f. SIGVTALRM (use setitimer system call)
+g. SIGPROF (use setitimer system call)
+Date: 19th Sep, 2024.
+============================================================================
+*/
+
+
 #include <signal.h> 
 #include <stdio.h>
 #include <unistd.h>
@@ -18,3 +35,11 @@ void main()
     else
         raise(SIGSEGV);
 }
+
+/*
+
+Output:
+aashish-vaswani@aashish-vaswani-HP-Laptop-15g-dr0xxx:~/hl2/8$ ./8a
+Signal SIGSEGV has been caught!
+
+*/

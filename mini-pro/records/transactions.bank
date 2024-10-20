@@ -1,0 +1,48 @@
+Transaction ID: 1
+Account ID: 5
+Details of transaction:
+	Date: 11:21 20/10/2024
+	Operation: Deposit
+	Sender Account ID: 5
+	Receiver Account ID: 5
+	Balance -
+		Before: 1579
+		After: 1679
+		Difference: 100
+
+Transaction ID: 2
+Account ID: 5
+Details of transaction:
+	Date: 11:21 20/10/2024
+	Operation: Withdraw
+	Sender Account ID: 5
+	Receiver Account ID: 5
+	Balance -
+		Before: 1679
+		After: 1579
+		Difference: -100
+
+Transaction ID: 3
+Account ID: 5
+Details of transaction:
+	Date: 11:22 20/10/2024
+	Operation: Transfer
+	Sender Account ID: 5
+	Receiver Account ID: 2
+	Balance -
+		Before: 1579
+		After: 1569
+		Difference: -10
+
+Transaction ID: 4
+Account ID: 2
+Details of transaction:
+	Date: 11:22 20/10/2024
+	Operation: Transfer
+	Sender Account ID: 2
+	Receiver Account ID: 5
+	Balance -
+		Before: 587
+		After: 597
+		Difference: 10
+

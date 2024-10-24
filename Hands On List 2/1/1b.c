@@ -38,7 +38,7 @@ int main() {
         timer.it_value.tv_sec = 0;
         timer.it_value.tv_usec = 10000;
     }
-
+    
     timerStatus = setitimer(ITIMER_VIRTUAL, &timer, NULL);
     if (timerStatus == -1) {
         perror("Error while setting the interval timer");
